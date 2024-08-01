@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="black-text">
+      <p class="name">Chuck JEONG</p>
+      <p>
+        <img src="images/email-icon.png" alt="Email Icon" class="icon">
+        12345@gmail.com
+      </p>
+      <p>
+        <img src="images/phone-icon.png" alt="Phone Icon" class="icon">
+        0123456789
+      </p>
+    </div>
+    <div class="nav-item">
+      <a href="#about">About Me</a>
+      <!-- <span class="space">|</span> -->
+      <a href="#recommendations">Recommendations</a>
+      
+      <a href="#skills">Skills</a>
+      
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section id="about">
+        <img src="images/profile.jpg" alt="Profile Image" class="profile-img" align="left">
+        <p class="profile-name">Chuck JEONG</p>
+        <div class="profile-text">
+          <p class="hello-world">Hello World! <img src="images/hello-icon.png" alt="Hello Icon" class="hello-icon"></p>
+          <p>I'm Chuck, a software engineer</p>
+        </div>
+        <p>I have over six years of experience in the fire industry and am now seeking new challenges.</p>
+        <p> I decided to start a new career in
+          game development.</p>
+        <p>I began studying on my own and developed games using the Unity engine.</p>
+        <p>After two weeks, I uploaded my first game, Galaxy Defender to
+          <a href="https://chuck3120.itch.io/eggs-galaxy-defender" class="io">itch.io.</a>
+        </p>
+        <p>I primarily use C# but also work with HTML, CSS, and JavaScript. In the future, I hope to create great
+          software that helps improve people's lives.</p>
+      </section>
+
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+          <div class="recommendation">
+            <p>"Chuck is a very quick learner and quickly grasps key concepts of Web development.
+              He has a great attitude & is an excellent team player.
+              He has a curious mind and asks the right questions.
+              He takes initiative within a team and has the potential to lead the team."</p>
+            <p class="jane">- Jane</p>
+          </div>
+          <div class="recommendation">
+            <p>"Working with Chuck has been an awesome experience.
+              He is highly knowledgeable and always goes the extra step to make sure everything is right.
+              For any future projects that need her expertise, I would definitely want to work with him again."</p>
+            <p class="jane">- Chris</p>
+          </div>
+          <div class="recommendation">
+            <p>"I had worked along with Jane during the initial phase of our venture which needed Web development. She
+              is a committed resource who has in-depth knowledge about the domain. She will be an asset for any
+              organization!"</p>
+            <p class="jane">- Son</p>
+          </div>
+          <div class="recommendation">
+            <p>"Chuck is an individual with exceptional expertise and relentless passion.
+              His ability to manage projects and work within a team has been a tremendous asset to our team.
+              Chuck is an outstanding problem solver who can tackle any challenge and always maintains a positive
+              attitude.
+              It has been a privilege to work with him, and I highly recommend Chuck for any project."</p>
+            <p class="jane">- Park</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-list">
+          <div class="skill-card">
+            <img src="images/csharp-icon.png" alt="C# Icon" class="skill-icon">
+            <p class="skill-name">C#</p>
+            <p>4 years experience</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/html-icon.png" alt="HTML Icon" class="skill-icon">
+            <p class="skill-name">HTML</p>
+            <p>4 years experience</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/css-icon.png" alt="CSS Icon" class="skill-icon">
+            <p class="skill-name">CSS</p>
+            <p>4 years experience</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/js-icon.png" alt="JavaScript Icon" class="skill-icon">
+            <p class="skill-name">JavaScript</p>
+            <p>3 years experience</p>
+          </div>
+
+          <div class = "skill-card">
+            <img src="images/rust-icon.png" alt="Rust Icon" class="skill-icon">
+            <p class="skill-name">Rust</p>
+            <p>3 years experience</p>
+        </div>
+        <div class = "skill-card">
+          <img src="images/python-icon.png" alt="Python Icon" class="skill-icon">
+          <p class="skill-name">Python</p>
+          <p>7 years experience</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Galaxy Defender</h3>
+          <li>I created an HTML5 game that works on a web page. The name of the game is Galaxy Defender.
+          </li>
+        </div>
+        <hr>
+        <div class="project">
+          <h3>Void</h3>
+          <li>I created a 2D mobile game, primarily for Android.
+            It is currently in internal testing on the Google Play Store and will be released soon.
+          </li>
+        </div>
+        <hr>
+        <div class="project">
+          <h3>Fashion Website</h3>
+          <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a
+            shopping cart, using stripe for payment gateway</li>
+        </div>
+      </section>
+    </div>
+    <form>
+    <section id="recommendation-form" class ="recommendation">
+     <h3 class = "jane">Leave a Recommendation</h3> 
+      <p>
+
+        <textarea id="new-recommendation" placeholder="Write a new recommendation">
+
+        </textarea>
+      </p>
+      <p>
+        <input type="text" id="recommender-name" placeholder="Your Name(optional)">
+      </p>
+      
+      <button type="submit">Submit</button>
+    </section>
+  </form>
+  </main>
+
+  <footer>
+    <a href="#" id="home-icon">
+      <img src="images/home_icon.png" alt="Home Icon" class="home-icon">
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
